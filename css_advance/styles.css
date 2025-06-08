@@ -1,0 +1,335 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and global styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-logo img {
+  height: 24px;
+  width: 24px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #b381f7;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+              url('./images/Object.png') no-repeat center center/cover;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.cta-button {
+  background-color: #d45fff;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a93eea;
+}
+
+/* AVATAR SECTION */
+.avatar-section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+ 
+}
+
+.avatar-card {
+  text-align: center;
+  max-width: 150px;
+  
+}
+
+.avatar-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.avatar-card h4 {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.avatar-card p {
+  font-size: 0.8rem;
+  color: #ccc;
+  line-height: 1.2;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial {
+  background-color: #b381f7;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.testimonial-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonial-content .quote {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-content .name {
+  font-weight: bold;
+}
+
+.testimonial-content .title {
+  font-style: italic;
+  color: #eee;
+}
+
+/* POPULAR TUTORIALS SECTION */
+.tutorials {
+  background-color: white;
+  color: #333;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.tutorials h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.tutorials .highlight {
+  color: #b381f7;
+  font-weight: bold;
+}
+
+.tutorial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.tutorial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  padding: 1rem;
+  max-width: 240px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+}
+
+.tutorial-thumb {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tutorial-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(179, 129, 247, 0.8);
+  border-radius: 50%;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.tutorial-card h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tutorial-card p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.tutorial-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #777;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.rating span {
+  color: #b381f7;
+}
+
+.duration {
+  font-weight: bold;
+}
+
+
+
+.register-button {
+  background-color: #8a2be2; /* Purple button background */
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px; /* More rounded corners for the button */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.register-button:hover {
+    background-color: #9b41ed;
+}
+
+.membership-section {
+    text-align: center;
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.membership-section h1 {
+    font-size: 2.5em;
+    color: #8a2be2; /* Purple color for the heading */
+    margin-bottom: 50px;
+}
+
+.membership-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #1a1a2e; /* Same as body background for a seamless look */
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1; /* Allow cards to grow and shrink */
+    min-width: 220px; /* Minimum width for each card */
+    max-width: 280px; /* Maximum width for each card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card .smiley {
+    font-size: 4em; /* Large smiley size */
+    margin-bottom: 20px;
+    color: #8a2be2; /* Purple color for smileys */
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #b0b0b0; /* Slightly lighter text for description */
+}
