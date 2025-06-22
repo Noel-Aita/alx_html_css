@@ -1,0 +1,9 @@
+.features {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.feature i {
+  font-size: 3rem;
+  color: var(--main-color);
+}
